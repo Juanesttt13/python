@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #111; /* Fondo oscuro */
+    color: #FF0; /* Texto amarillo brillante */
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em; /* Grande y atrevido */
+    color: #FF0000; /* Rojo brillante */
+    text-shadow: 2px 2px 10px #FFF, 0 0 25px #F00, 0 0 5px #F00; /* Sombra dramática */
+    margin-top: 50px;
+    padding: 20px;
+}
+img {
+    max-width: 90%;
+    height: auto;
+    border: 5px solid #FF0; /* Borde amarillo intenso */
+    border-radius: 20px;
+    box-shadow: 0 0 15px 5px #FF0, 0 0 25px #FF0000; /* Sombras rojas y amarillas */
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1); /* Aumentar tamaño al pasar el mouse */
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.imgur.com/2Hsyc7B.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Contenedor */
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #222;
+    border: 5px dashed #FF0000; /* Borde rojo */
+    box-shadow: 0 0 25px #F00;
+    border-radius: 20px;
+}
+.blinking-text {
+    font-size: 2em;
+    color: #FFF;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        visibility: visible;
+    }
+    50% {
+        visibility: hidden;
+    }
+}
